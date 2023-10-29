@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeacteController">
+   <children>
+      <Pane layoutX="30.0" layoutY="34.0" prefHeight="45.0" prefWidth="990.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="26.0" layoutY="9.0" prefHeight="27.0" prefWidth="178.0" text="LISTES D'ACTES" textFill="#f8f4f4">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tab" layoutX="22.0" layoutY="179.0" prefHeight="322.0" prefWidth="1007.0">
+        <columns>
+          <TableColumn fx:id="tabid" prefWidth="36.0" text="N°" />
+          <TableColumn fx:id="tabnature" prefWidth="73.0" text="Nature" />
+            <TableColumn fx:id="tabobjet" prefWidth="64.0" text="Objet" />
+            <TableColumn fx:id="tabnomv" prefWidth="84.0" text="Nom V" />
+            <TableColumn fx:id="tabadrv" prefWidth="75.0" text="Adresse V" />
+            <TableColumn fx:id="tabcniv" prefWidth="75.0" text="CNI V" />
+            <TableColumn fx:id="tabtelv" prefWidth="75.0" text="Telephone V" />
+            <TableColumn fx:id="tabnoma" prefWidth="96.0" text="Nom A" />
+            <TableColumn fx:id="tabadra" prefWidth="75.0" text="Adresse A" />
+            <TableColumn fx:id="tabcnia" prefWidth="75.0" text="CNI A" />
+            <TableColumn fx:id="tabtela" prefWidth="75.0" text="Telephone A" />
+            <TableColumn fx:id="tabfait" prefWidth="75.0" text="Fait par" />
+            <TableColumn fx:id="tabdate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tablieu" prefWidth="51.0" text="Lieu" />
+        </columns>
+      </TableView>
+      <Label layoutX="189.0" layoutY="147.0" prefHeight="18.0" prefWidth="94.0" style="-fx-background-color: FF8040;" text="A: Acquereur" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="147.0" prefHeight="18.0" prefWidth="94.0" style="-fx-background-color: FF8040;" text="V :  Vendeur">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addact" layoutX="461.0" layoutY="142.0" onAction="#addacte" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: grey;" text="Add" textFill="#fcfcfc">
+         <graphic>
+            <FontAwesomeIconView fill="#eeebeb" glyphName="PLUS" size="14" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="rechercheract" layoutX="668.0" layoutY="144.0" />
+      <JFXButton fx:id="rechact" layoutX="816.0" layoutY="142.0" onAction="#rechercheracte" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: grey;" text="RECHERCHER" textFill="#fcfcfc">
+         <graphic>
+            <FontAwesomeIconView fill="#eeebeb" glyphName="SEARCH" size="14" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

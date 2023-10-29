@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListetestamentController">
+   <children>
+      <Pane layoutX="35.0" layoutY="44.0" prefHeight="45.0" prefWidth="995.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="26.0" layoutY="9.0" prefHeight="27.0" prefWidth="201.0" text="LISTES DE TESTAMENTS" textFill="#fffdfd">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tab" layoutX="32.0" layoutY="189.0" prefHeight="322.0" prefWidth="1007.0">
+         <columns>
+            <TableColumn fx:id="tabid" prefWidth="24.000030517578125" text="N°" />
+            <TableColumn fx:id="tabtype" prefWidth="53.0" text="Type" />
+            <TableColumn fx:id="tablegs" prefWidth="95.0" text="Legs" />
+            <TableColumn fx:id="tabnoml" prefWidth="64.0" text="Nom L" />
+            <TableColumn fx:id="tabadrl" prefWidth="60.0" text="Adresse L" />
+            <TableColumn fx:id="tabcnil" prefWidth="52.0" text="CNI L" />
+            <TableColumn fx:id="tabtell" prefWidth="73.0" text="Telephone L" />
+            <TableColumn fx:id="tabnomb" prefWidth="69.0" text="Nom B" />
+            <TableColumn fx:id="tabadrb" prefWidth="62.0" text="Adresse B" />
+            <TableColumn fx:id="tabcnib" prefWidth="66.0" text="CNI B" />
+            <TableColumn fx:id="tabtelb" prefWidth="81.0" text="Telephone B" />
+            <TableColumn fx:id="tabcate" prefWidth="71.0" text="Categorie B" />
+            <TableColumn fx:id="tabcon" prefWidth="79.0" text="Conditions" />
+            <TableColumn fx:id="tabfait" prefWidth="50.0" text="Fait par" />
+            <TableColumn fx:id="tabdate" prefWidth="50.0" text="Date" />
+            <TableColumn fx:id="tablieu" prefWidth="56.0" text="Lieu" />
+         </columns>
+      </TableView>
+      <Label layoutX="44.0" layoutY="156.0" prefHeight="18.0" prefWidth="94.0" style="-fx-background-color: F4B38A;" text="L:  Legeur">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="156.0" prefHeight="18.0" prefWidth="94.0" style="-fx-background-color: F4B38A;" text="B: Beneficiaire">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addtest" layoutX="483.0" layoutY="151.0" onAction="#addtestament" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: grey;" text="Add" textFill="#fcfcfc">
+         <graphic>
+            <FontAwesomeIconView fill="#eeebeb" glyphName="PLUS" size="14" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="recherchertes" layoutX="662.0" layoutY="153.0" />
+      <JFXButton fx:id="rechtest" layoutX="810.0" layoutY="151.0" onAction="#recherchertestament" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: grey;" text="RECHERCHER" textFill="#fcfcfc">
+         <graphic>
+            <FontAwesomeIconView fill="#eeebeb" glyphName="SEARCH" size="14" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

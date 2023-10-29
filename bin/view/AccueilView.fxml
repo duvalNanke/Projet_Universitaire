@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1331.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AcceuilController">
+   <children>
+      <VBox prefHeight="730.0" prefWidth="276.0" style="-fx-background-color: FFFF80;">
+         <children>
+            <Pane prefHeight="384.0" prefWidth="282.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="137.0" text="Bienvenue ">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="14.0" prefHeight="30.0" prefWidth="113.0" />
+                  <ImageView fitHeight="80.0" fitWidth="137.0" layoutX="74.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/R.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="232.0" fitWidth="208.0" layoutX="24.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/arm.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="col" onAction="#collaboratorAction" prefHeight="80.0" prefWidth="282.0" text="GESTION COLLABORATEURS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" />
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="74.0" prefWidth="282.0">
+               <children>
+                  <Label layoutX="82.0" layoutY="29.0" text="GESTION USAGERS">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="GROUP" />
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="doc" onAction="#documentAction" prefHeight="78.0" prefWidth="282.0" text="DOCUMENTATIONS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FILE" size="15" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="791.0" fitWidth="1331.0" layoutX="284.0" layoutY="-106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/j%202022-11-12%20164533.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="277.0" layoutY="370.0" prefHeight="272.0" prefWidth="1047.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="436.0" minHeight="10.0" prefHeight="246.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="#d34c09" glyphName="SEARCH" size="18" wrappingWidth="20.142857551574707" />
+                  <JFXTextField fx:id="rechercherusa" prefHeight="27.0" prefWidth="375.0" style="-fx-border-color: FF8040;" />
+                  <JFXButton onAction="#rechercherusa" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: FF8040;" text="Rechercher" />
+               </children>
+            </HBox>
+            <TableView fx:id="tabu" prefHeight="305.0" prefWidth="863.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="idu" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="nomu" prefWidth="88.0" text="NOM" />
+                  <TableColumn fx:id="adresseu" prefWidth="85.0" text="ADRESSE" />
+                  <TableColumn fx:id="sexeu" prefWidth="46.0" text="SEXE" />
+                  <TableColumn fx:id="datenaisu" prefWidth="111.0" text="DATE NAISSANCE" />
+                  <TableColumn fx:id="statutu" prefWidth="58.0" text="STATUT" />
+                  <TableColumn fx:id="profu" prefWidth="78.0" text="PROFESSION" />
+                  <TableColumn fx:id="cniu" prefWidth="96.0" text="NUMEROS CNI" />
+                  <TableColumn fx:id="telu" prefWidth="103.0" text="TELEPHONE" />
+                  <TableColumn fx:id="docu" prefWidth="134.0" text="DOCUMENT FOURNIT" />
+                  <TableColumn fx:id="depotu" minWidth="0.0" prefWidth="108.0" text="DATE DEPOT" />
+                  <TableColumn fx:id="natureu" prefWidth="103.0" text="NATURE" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+      <Pane layoutX="275.0" prefHeight="96.0" prefWidth="1057.0" style="-fx-background-color: FF8040;">
+         <children>
+            <Label layoutX="67.0" layoutY="28.0" prefHeight="17.0" prefWidth="137.0" text="/home/usagers" />
+            <Label layoutX="67.0" layoutY="45.0" prefHeight="37.0" prefWidth="212.0" text="usagers">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <JFXTextField fx:id="nomcli" layoutX="282.0" layoutY="143.0" prefHeight="25.0" prefWidth="187.0" promptText="Noms et Prenoms" />
+      <JFXTextField fx:id="adressecli" layoutX="488.0" layoutY="143.0" prefHeight="25.0" prefWidth="187.0" promptText="Adresse" />
+      <JFXTextField fx:id="statutcli" layoutX="488.0" layoutY="186.0" prefHeight="25.0" prefWidth="187.0" promptText="Statut" />
+      <JFXTextField fx:id="cnicli" layoutX="282.0" layoutY="233.0" prefHeight="25.0" prefWidth="187.0" promptText="N°CNI" />
+      <JFXTextField fx:id="telcli" layoutX="488.0" layoutY="233.0" prefHeight="25.0" prefWidth="187.0" promptText="Telephone" />
+      <JFXTextArea fx:id="doccli" layoutX="911.0" layoutY="197.0" prefHeight="123.0" prefWidth="248.0" promptText="Documents fournis" />
+      <JFXTextField fx:id="pbcli" layoutX="282.0" layoutY="288.0" prefHeight="25.0" prefWidth="187.0" promptText="nature du probleme" />
+      <JFXDatePicker fx:id="depotcli" layoutX="955.0" layoutY="143.0" prefHeight="25.0" prefWidth="187.0" promptText="date de depot" />
+      <JFXTextField fx:id="datecli" layoutX="282.0" layoutY="185.0" prefHeight="25.0" prefWidth="187.0" promptText="Date de naissance" />
+      <JFXComboBox fx:id="sexecli" layoutX="702.0" layoutY="221.0" onMouseClicked="#sexeclient" prefHeight="25.0" prefWidth="187.0" promptText="Sexe" />
+      <JFXTextField fx:id="metier" layoutX="488.0" layoutY="288.0" prefHeight="25.0" prefWidth="187.0" promptText="Profession" />
+      <JFXButton layoutX="413.0" layoutY="656.0" onAction="#Ajouterusa" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: FF8040;" text="Ajouter" />
+      <JFXButton layoutX="906.0" layoutY="656.0" onAction="#Modifierusa" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: FFFF80;" text="Modifier" />
+      <JFXButton layoutX="693.0" layoutY="656.0" onAction="#Actualiser" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: grey;" text="Actualisé" textFill="#f8f4f4" />
+   </children>
+</AnchorPane>

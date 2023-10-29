@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_171"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/logicielstravail/fontawesomefx-8.9.jar"/>
+	<classpathentry kind="lib" path="D:/logicielstravail/jfoenix-8.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/logicielstravail/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar"/>
+	<classpathentry kind="lib" path="D:/logicielstravail/itextpdf-5.4.3-sources.jar"/>
+	<classpathentry kind="lib" path="D:/logicielstravail/itextpdf-5.4.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotaireController">
+   <children>
+      <JFXButton fx:id="confirmer" layoutX="269.0" layoutY="69.0" onAction="#confirmerAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: BLACK;" text="CONFIRMER" textFill="#f5f0f0" />
+      <JFXPasswordField fx:id="notaire" layoutX="81.0" layoutY="23.0" prefHeight="34.0" prefWidth="211.0" />
+      <JFXButton fx:id="annuler" layoutX="399.0" layoutY="69.0" onAction="#annulerAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: BLACK;" text="ANNULER" textFill="#f5f0f0" />
+   </children>
+</AnchorPane>
